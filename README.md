@@ -39,7 +39,8 @@ $(document).ready(function() {
 ```
 
 #### 4. Check out our other Summernote Plugins
-- [Summernote Image Attributes]()
+- [Summernote Image Attributes](https://github.com/StudioJunkyard/summernote-image-attributes)
+- [Summernote Image Shapes](https://github.com/StudioJunkyard/summernote-image-shapes)
 - [Summernote Video Attributes](https://github.com/StudioJunkyard/summernote-video-attributes)
   - Insert Video's from various Streaming Services, with Options Editing.
 - [Summernote Cleaner](https://github.com/StudioJunkyard/summernote-cleaner)

@@ -34,6 +34,11 @@ $(document).ready(function() {
                 ['remove', ['removeMedia']]
             ],
         },
+        captionIt:{
+            icon:'<i class="note-icon-{your-icon}"/>', // Leave empty or don't set for default Icon.
+            figureClass:'{figure-class/es}',
+            figcaptionClass:'{figcapture-class/es}',
+        }
     });
 });
 ```

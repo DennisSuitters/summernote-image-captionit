@@ -1,9 +1,9 @@
 # summernote-image-captionit
 Adds a button that will use the TITLE or ALT depending which is used, places that text into a `figcaption` and wraps the `img` and `figcaption` within a `figure` element, ala HTML5 like:
 ````html
-<figure>
+<figure class="{inserted class from option}">
     <img src="image.jpg" title="uses this first" alt="uses this if title is empty">
-    <figcaption>caption used from title or alt if title is empty.</figcaption>
+    <figcaption class="{inserted class from option}">caption used from title or alt if title is empty.</figcaption>
 </figure>
 ````
 

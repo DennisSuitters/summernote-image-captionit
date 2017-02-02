@@ -1,3 +1,5 @@
+/* https://github.com/StudioJunkyard/summernote-image-captionit */
+
 (function(factory){
   if(typeof define==='function'&&define.amd){
     define(['jquery'],factory)
@@ -42,23 +44,27 @@
                 classList=img.attr('class');
                 inlineStyles=img.attr('style');
                 imgWidth=img.width();
+
+			var captionText = "";
+		    if(titleText){
+			  captionText = titleText;
+		    }else if(altText){
+			  captionText = altText;
+		    } else {
+			  captionText = "Caption goes here.";
+		    } 
+		    
             var $parentAnchorLink=img.parent();
             if($parentAnchorLink.is('a')){
               $newFigure=$parentAnchorLink.wrap('<figure class="'+options.captionIt.figureClass+'"></figure>').parent();
-              if(titleText){
-                $parentAnchorLink.after('<figcaption class="'+options.captionIt.figcaptionClass+'>'+titleText+'</figcaption>');
-              }else{
-                $parentAnchorLink.after('<figcaption class="'+options.captionIt.figcaptionClass+'>'+altText+'</figcaption>');
-              }
+              $parentAnchorLink.after('<figcaption class="'+options.captionIt.figcaptionClass+'>'+captionText+'</figcaption>');
+              
               $newFigure.width(imgWidth);
               $newFigure.parent('p').before($newFigure);
             }else{
               $newFigure=img.wrap('<figure class="'+options.captionIt.figureClass+'"></figure>').parent();
-              if(titleText){
-                img.after('<figcaption class="'+options.captionIt.figcaptionClass+'">'+titleText+'</figcaption>');
-              }else{
-                img.after('<figcaption class="'+options.captionIt.figcaptionClass+'">'+altText+'</figcaption>');
-              }
+              img.after('<figcaption class="'+options.captionIt.figcaptionClass+'">'+captionText+'</figcaption>');              
+              
               $newFigure.width(imgWidth);
               $newFigure.parent('p').before($newFigure);
             }

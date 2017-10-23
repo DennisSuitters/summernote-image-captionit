@@ -1,9 +1,9 @@
 # summernote-image-captionit
-Adds a button that will use the TITLE or ALT depending which is used, places that text into a `figcaption` and wraps the `img` and `figcaption` within a `figure` element, ala HTML5 like:
+Adds a button to the Image Popover that will use the TITLE or ALT depending which is used, places that text into a `figcaption` and wraps the `img` and `figcaption` within a `figure` element, ala HTML5 like:
 ````html
 <figure class="{inserted class from option}">
     <img src="image.jpg" title="uses this first" alt="uses this if title is empty">
-    <figcaption class="{inserted class from option}">caption used from title or alt if title is empty.</figcaption>
+    <figcaption class="{inserted class from option}">caption used from title or alt if title is empty or the default text in the captionTitle option.</figcaption>
 </figure>
 ````
 
@@ -38,24 +38,11 @@ $(document).ready(function() {
             icon:'<i class="note-icon-{your-icon}"/>', // Leave empty or don't set for default Icon.
             figureClass:'{figure-class/es}',
             figcaptionClass:'{figcapture-class/es}',
+            captionText:'{Default Caption Editable Placeholder Text if Title or Alt are empty}'
         }
     });
 });
 ```
 
-#### 4. Check out our other Summernote Plugins
-- [Summernote Image Attributes](https://github.com/StudioJunkyard/summernote-image-attributes)
-  - Add Button to Image Popup to enable editing various Image Attributes, including adding Links.
-- [Summernote Image Caption It](https://github.com/StudioJunkyard/summernote-image-captionit)
-  - Add Button to Image Popup to add FigCaption and Figure Elements using the TITLE or ALT Text.
-- [Summernote Image Shapes](https://github.com/StudioJunkyard/summernote-image-shapes)
-  - Add Button to Image Popup to enable selecting Bootstrap Image Shapes.
-- [Summernote Video Attributes](https://github.com/StudioJunkyard/summernote-video-attributes)
-  - Insert Video's from various Streaming Services, with Options Editing.
-- [Summernote Cleaner](https://github.com/StudioJunkyard/summernote-cleaner)
-  - Clean Pasted and Existing Markup, mainly for cleaning text from Office Document software.
-- [Summernote Save Button](https://github.com/StudioJunkyard/summernote-save-button)
-  - Add a Save Button to the Toolbar when Summernote is inside a form with a Textarea to easily save your document.
-- [Summernote SEO](https://github.com/StudioJunkyard/summernote-seo)
-  - Adds a Dropdown to the Toolbar that allows extracting selected text and inserts it into input elements for editing.
-  
+#### 4. Check out our other Summernote Plugins via our main Github page.
+- [Diemen Design](https://github.com/DiemenDesign/)

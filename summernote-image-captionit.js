@@ -1,4 +1,4 @@
-/* https://github.com/StudioJunkyard/summernote-image-captionit */
+/* https://github.com/DiemenDesign/summernote-image-captionit */
 (function(factory){
   if(typeof define==='function'&&define.amd){
     define(['jquery'],factory)
@@ -51,11 +51,11 @@
                   imgWidth=img.width();
 			        var captionText="";
 		          if(titleText){
-			             captionText=titleText;
+                captionText=titleText;
 		          }else if(altText){
-			             captionText=altText;
+                captionText=altText;
 		          }else{
-			             captionText=options.captionIt.captionText;
+                captionText=options.captionIt.captionText;
 		          }
               if($parentAnchorLink.is('a')){
                 $newFigure=$parentAnchorLink.wrap('<figure class="'+options.captionIt.figureClass+'"></figure>').parent();

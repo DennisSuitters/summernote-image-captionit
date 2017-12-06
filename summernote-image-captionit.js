@@ -32,8 +32,8 @@
           lang      = options.langInfo;
       context.memo('button.captionIt', function () {
         var button=ui.button({
-          contents:options.captionIt.icon,
-          tooltip:lang.captionIt.tooltip,
+          contents: options.captionIt.icon,
+          tooltip:  lang.captionIt.tooltip,
           click: function () {
             var img = $($editable.data('target'));
             var $parentAnchorLink = img.parent();
@@ -59,7 +59,6 @@
               if ($parentAnchorLink.is('a')) {
                 $newFigure = $parentAnchorLink.wrap('<figure class="' + options.captionIt.figureClass + '"></figure>').parent();
                 $newFigure.append('<figcaption class="' + options.captionIt.figcaptionClass + '>' + captionText + '</figcaption>');
-                console.log($parentAnchorLink);
                 $newFigure.width(imgWidth);
               } else {
                 $newFigure = img.wrap('<figure class="' + options.captionIt.figureClass + '"></figure>').parent();

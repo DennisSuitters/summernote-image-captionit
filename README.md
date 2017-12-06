@@ -35,7 +35,6 @@ $(document).ready(function() {
             ],
         },
         captionIt:{
-            icon:'<i class="note-icon-{your-icon}"/>', // Leave empty or don't set for default Icon.
             figureClass:'{figure-class/es}',
             figcaptionClass:'{figcapture-class/es}',
             captionText:'{Default Caption Editable Placeholder Text if Title or Alt are empty}'
